@@ -18,3 +18,7 @@ it("Task has an urgency level", function(){
 it("Task has a reward", function(){
   assert.strictEqual(task.reward, "Gold");
 });
+
+it("New task isnt completed", function(){
+  assert.strictEqual(task.completed, false);
+});
