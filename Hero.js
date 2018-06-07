@@ -5,6 +5,9 @@ var Hero = function(name, favouriteFood, tasks){
     this.health = 100;
   };
 
+Hero.prototype.talk = function () {
+  return "Hello my name is " + this.name;
+};
 
 
 module.exports = Hero;
