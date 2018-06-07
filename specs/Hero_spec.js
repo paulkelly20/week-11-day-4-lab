@@ -27,3 +27,7 @@ it("Hero has a name", function(){
 it("Hero has health", function(){
   assert.strictEqual(hero.health, 100);
 });
+
+it("Hero has a favourite food", function(){
+  assert.strictEqual(hero.favouriteFood, "Chicken");
+});
