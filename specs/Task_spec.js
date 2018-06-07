@@ -14,3 +14,7 @@ it("Task has a difficulty level", function(){
 it("Task has an urgency level", function(){
   assert.strictEqual(task.urgencyLevel, 20);
 });
+
+it("Task has a reward", function(){
+  assert.strictEqual(task.reward, "Gold");
+});
