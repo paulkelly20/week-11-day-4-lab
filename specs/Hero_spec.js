@@ -23,3 +23,7 @@ beforeEach(function(){
 it("Hero has a name", function(){
   assert.strictEqual(hero.name, "Paul");
 });
+
+it("Hero has health", function(){
+  assert.strictEqual(hero.health, 100);
+});
