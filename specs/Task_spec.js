@@ -10,3 +10,7 @@ beforeEach(function(){
 it("Task has a difficulty level", function(){
   assert.strictEqual(task.difficultyLevel, 100);
 });
+
+it("Task has an urgency level", function(){
+  assert.strictEqual(task.urgencyLevel, 20);
+});
