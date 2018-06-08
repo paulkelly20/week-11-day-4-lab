@@ -10,6 +10,13 @@ Hero.prototype.talk = function () {
   return "Hello my name is " + this.name;
 };
 
+Hero.prototype.eat = function (food) {
+  if(food === this.favouriteFood){
+    this.health += food.replenishmentValue * 1.5;
+  }
+  else this.health += food.replenishmentValue;
+};
+
 
 
 module.exports = Hero;

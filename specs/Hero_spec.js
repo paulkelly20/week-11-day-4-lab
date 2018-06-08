@@ -43,3 +43,8 @@ it("Hero has a collection of tasks to complete", function(){
 it("Hero has a empty backpack", function(){
   assert.strictEqual(hero.backpack.length, 0)
 });
+
+it("Hero eats food and health goes up", function(){
+  hero.eat(food);
+  assert.strictEqual(hero.health, 120);
+});
