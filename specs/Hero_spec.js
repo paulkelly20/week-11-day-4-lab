@@ -48,3 +48,8 @@ it("Hero eats food and health goes up", function(){
   hero.eat(food);
   assert.strictEqual(hero.health, 120);
 });
+
+it("Hero eats favourite food and health goes up", function(){
+  hero.eat(food2);
+  assert.strictEqual(hero.health, 115);
+});
