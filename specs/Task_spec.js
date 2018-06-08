@@ -4,7 +4,7 @@ var Task = require('../Task.js');
 var task;
 
 beforeEach(function(){
-  task = new Task(100, 20, "Gold");
+  task = new Task(100, 20, 50);
 });
 
 it("Task has a difficulty level", function(){
@@ -16,7 +16,7 @@ it("Task has an urgency level", function(){
 });
 
 it("Task has a reward", function(){
-  assert.strictEqual(task.reward, "Gold");
+  assert.strictEqual(task.reward, 50);
 });
 
 it("New task isnt completed", function(){

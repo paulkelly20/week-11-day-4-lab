@@ -17,6 +17,18 @@ Hero.prototype.eat = function (food) {
   else this.health += food.replenishmentValue;
 };
 
+Hero.prototype.sortTasks = function (taskPropertyToSort) {
+  this.tasks.sort(function (a, b) {
+    console.log(taskPropertyToSort);
+    return b.taskPropertyToSort - a.taskPropertyToSort;
+  }); return this.tasks[0];
+};
+
+Hero.prototype.findUncompletedTasks = function () {
+var uncompletedTasks =  this.tasks.filter(task => task.completed === false);
+return uncompletedTasks;
+};
+
 
 
 module.exports = Hero;

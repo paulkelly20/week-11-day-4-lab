@@ -17,7 +17,7 @@ beforeEach(function(){
   task2 = new Task(30, 5, "House");
   task3 = new Task(40, 40, "Speedboat");
   taskCollection = [task, task2, task3];
-  hero = new Hero("Paul", "Chicken",taskCollection )
+  hero = new Hero("Paul", "Chicken", taskCollection )
 });
 
 it("Hero has a name", function(){
@@ -53,3 +53,12 @@ it("Hero eats favourite food and health goes up", function(){
   hero.eat(food2);
   assert.strictEqual(hero.health, 115);
 });
+
+xit("Hero sorts tasks by difficultyLevel", function(){
+  assert.deepStrictEqual(hero.sortTasks("difficultyLevel"), task3);
+});
+
+it("Hero finds uncompleted tasks", function(){
+  task.complete()
+  assert.deepStrictEqual(hero.findUncompletedTasks(), [task2, task3]);
+})
