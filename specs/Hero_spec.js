@@ -35,3 +35,7 @@ it("Hero has a favourite food", function(){
 it("Hero can Talk", function(){
   assert.strictEqual(hero.talk(), "Hello my name is Paul")
 });
+
+it("Hero has a collection of tasks to complete", function(){
+  assert.strictEqual(hero.tasks.length, 3)
+});
