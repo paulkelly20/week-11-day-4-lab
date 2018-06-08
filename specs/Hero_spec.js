@@ -39,3 +39,7 @@ it("Hero can Talk", function(){
 it("Hero has a collection of tasks to complete", function(){
   assert.strictEqual(hero.tasks.length, 3)
 });
+
+it("Hero has a empty backpack", function(){
+  assert.strictEqual(hero.backpack.length, 0)
+});
